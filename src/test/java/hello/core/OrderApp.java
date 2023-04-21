@@ -5,21 +5,24 @@ import hello.core.member.Member;
 import hello.core.order.Order;
 import hello.core.order.OrderService;
 import hello.core.order.OrderServiceImpl;
-import hello.core.service.MemberService;
-import hello.core.service.MemberServiceImpl;
+import hello.core.member.service.MemberService;
+import hello.core.member.service.MemberServiceImpl;
 import org.mockito.internal.matchers.Or;
 
 public class OrderApp {
 
     public static void main(String[] args) {
-        MemberService memberService = new MemberServiceImpl();
-        OrderService orderService = new OrderServiceImpl();
 
-        long memberId = 1L;
-        Member member = new Member(memberId, "memberA", Grade.VIP);
-        memberService.join(member);
-
-        Order order = orderService.createOrder(memberId, "itemA", 10000);
-        System.out.println("order = " + order);
     }
 }
+//        MemberService memberService = new MemberServiceImpl();
+//        OrderService orderService = new OrderServiceImpl();
+//
+//        long memberId = 1L;
+//        Member member = new Member(memberId, "memberA", Grade.VIP);
+//        memberService.join(member);
+//
+//        Order order = orderService.createOrder(memberId, "itemA", 10000);
+//        System.out.println("order = " + order);
+//    }
+//}
