@@ -14,7 +14,9 @@ public class Order {
         this.itemPrice = itemPrice;
         this.discountPrice = discountPrice;
     }
-
+    public int calculatePrice(){
+        return itemPrice - discountPrice;
+    }
     public Long getMemberId() {
         return memberId;
     }
